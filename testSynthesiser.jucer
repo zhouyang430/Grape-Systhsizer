@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="SYCWws" name="testSynthesiser" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginFormats="buildStandalone,buildVST3" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn">
+  <MAINGROUP id="KNP73z" name="testSynthesiser">
+    <GROUP id="{C2F7CC0B-D7E4-FC02-3B96-7A178A3E4240}" name="Source">
+      <FILE id="XmPgPN" name="MySynth.h" compile="0" resource="0" file="Source/MySynth.h"/>
+      <FILE id="PA0UHr" name="Noise.h" compile="0" resource="0" file="Source/Noise.h"/>
+      <FILE id="FXpqeu" name="Filters.h" compile="0" resource="0" file="Source/Filters.h"/>
+      <FILE id="wAmbS9" name="WaveSampler.h" compile="0" resource="0" file="Source/WaveSampler.h"/>
+      <FILE id="Ab3gT4" name="PhaseModulation.h" compile="0" resource="0"
+            file="Source/PhaseModulation.h"/>
+      <FILE id="C05xVS" name="Oscillators.h" compile="0" resource="0" file="Source/Oscillators.h"/>
+      <FILE id="oNGKQF" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="XyckzK" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="bdwoWk" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="wCgOKk" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <GROUP id="{E57968AA-2D2A-1509-428B-2679BBD264B7}" name="Wavetables">
+        <FILE id="qd6MS0" name="Lazer Downlifter.wav" compile="0" resource="1"
+              file="Source/Wavetables/Lazer Downlifter.wav"/>
+        <FILE id="C18lqs" name="Robot Impact.wav" compile="0" resource="1"
+              file="Source/Wavetables/Robot Impact.wav"/>
+        <FILE id="EgslaA" name="Scary Motherboard.wav" compile="0" resource="1"
+              file="Source/Wavetables/Scary Motherboard.wav"/>
+        <FILE id="Jdr628" name="atmosphere 808 C.wav" compile="0" resource="1"
+              file="Source/Wavetables/atmosphere 808 C.wav"/>
+        <FILE id="xncjdh" name="awesome new kick.wav" compile="0" resource="1"
+              file="Source/Wavetables/awesome new kick.wav"/>
+        <FILE id="vunFPa" name="broken 808 F#.wav" compile="0" resource="1"
+              file="Source/Wavetables/broken 808 F#.wav"/>
+        <FILE id="TZRdvi" name="Hat 2.wav" compile="0" resource="1" file="Source/Wavetables/Hat 2.wav"/>
+        <FILE id="zlg49f" name="Intro Rhodes 80 F#m.wav" compile="0" resource="1"
+              file="Source/Wavetables/Intro Rhodes 80 F#m.wav"/>
+        <FILE id="lgCaWu" name="Crowd Cheering - 5.wav" compile="0" resource="1"
+              file="Source/Wavetables/Crowd Cheering - 5.wav"/>
+        <FILE id="Ldte4i" name="Forest Ambience.wav" compile="0" resource="1"
+              file="Source/Wavetables/Forest Ambience.wav"/>
+        <FILE id="eTx9IV" name="Open Hat 4.wav" compile="0" resource="1" file="Source/Wavetables/Open Hat 4.wav"/>
+        <FILE id="NAgTcA" name="Snare 45.wav" compile="0" resource="1" file="Source/Wavetables/Snare 45.wav"/>
+        <FILE id="OKPjq6" name="Train Coming.wav" compile="0" resource="1"
+              file="Source/Wavetables/Train Coming.wav"/>
+        <FILE id="JHiH5Y" name="Verse Pluck 75 F#m.wav" compile="0" resource="1"
+              file="Source/Wavetables/Verse Pluck 75 F#m.wav"/>
+        <FILE id="QPeSWs" name="Wonkiest Drums Out (100).wav" compile="0" resource="1"
+              file="Source/Wavetables/Wonkiest Drums Out (100).wav"/>
+        <FILE id="J8JNSE" name="atmos-54.wav" compile="0" resource="1" file="Source/Wavetables/atmos-54.wav"/>
+        <FILE id="AgU4RD" name="atmos-06.wav" compile="0" resource="1" file="Source/Wavetables/atmos-06.wav"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="testSynthesiser"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="testSynthesiser"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
